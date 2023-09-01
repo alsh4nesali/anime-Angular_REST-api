@@ -1,0 +1,22 @@
+<br>
+<a href="#" class="text-decoration-none cards">
+<div class="container">
+	<div class="row">
+		<div class="card mb-3 shadow-lg" style="max-width: 350px;" 
+		*ngFor="let user of List.data; let i=index;"
+		>
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <img src="{{ user.images.jpg.image_url }}" class="img-fluid rounded-start" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">{{ user.title }}</h5>
+		        
+		        <p class="card-text"><small class="text-body-secondary">{{ user.rating }}</small></p>
+		      </div>
+		    </div>
+		  </div>
+	</div>
+</div>
+	
